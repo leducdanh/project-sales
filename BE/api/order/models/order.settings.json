@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "orders",
+  "info": {
+    "name": "Order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Status": {
+      "type": "string"
+    },
+    "Total": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/order-details",
+      "handler": "order-detail.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/order-details/count",
+      "handler": "order-detail.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/order-details/:id",
+      "handler": "order-detail.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/order-details",
+      "handler": "order-detail.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/order-details/:id",
+      "handler": "order-detail.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/order-details/:id",
+      "handler": "order-detail.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

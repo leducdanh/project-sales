@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "order_details",
+  "info": {
+    "name": "OrderDetail"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "order": {
+      "model": "order"
+    },
+    "product": {
+      "model": "product"
+    },
+    "Quantyti": {
+      "type": "integer"
+    },
+    "Amount": {
+      "type": "integer"
+    }
+  }
+}

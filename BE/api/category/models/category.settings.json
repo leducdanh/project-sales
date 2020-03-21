@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "NameCat": {
+      "type": "string"
+    },
+    "AliasNameCat": {
+      "type": "string",
+      "unique": true
+    },
+    "IsDisplay": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

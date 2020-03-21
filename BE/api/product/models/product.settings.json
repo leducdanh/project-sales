@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "products",
+  "info": {
+    "name": "Product"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "NamePro": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "integer"
+    },
+    "Quantity": {
+      "type": "integer"
+    },
+    "AliasName": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "IsDisplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

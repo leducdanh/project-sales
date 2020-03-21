@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "images",
+  "info": {
+    "name": "Image"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "product": {
+      "model": "product"
+    },
+    "imageLink": {
+      "type": "string"
+    }
+  }
+}
